@@ -1,6 +1,6 @@
 {
-  "name": "vscode-yaml",
-  "displayName": "YAML Support by Red Hat",
+  "name": "kedge-language-client",
+  "displayName": "Kedge Support by Red Hat",
   "description": "YAML Support for Visual Studio Code provided by Red Hat",
   "author": "Red Hat",
   "contributors": [
