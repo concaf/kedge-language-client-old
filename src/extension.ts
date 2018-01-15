@@ -22,7 +22,7 @@ namespace SchemaAssociationNotification {
 export function activate(context: ExtensionContext) {
 
 	// The server is implemented in node
-	let serverModule = context.extensionPath + '/node_modules/yaml-language-server/out/server/src/server.js';
+	let serverModule = context.extensionPath + '/node_modules/kedge-language-server/out/server/src/server.js';
 
 	// The debug options for the server
 	let debugOptions = { execArgv: ["--nolazy", "--debug=6009"] };
@@ -47,7 +47,7 @@ export function activate(context: ExtensionContext) {
 	}
 
 	// Create the language client and start the client.
-	let client = new LanguageClient('yaml', 'Yaml Support', serverOptions, clientOptions); 
+	let client = new LanguageClient('yaml', 'Yaml Support', serverOptions, clientOptions);
 	let disposable = client.start();
 
 	// Push the disposable to the context's subscriptions so that the
